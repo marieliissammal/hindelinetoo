@@ -1,0 +1,40 @@
+# koodi parandamine
+
+import math #lisasin import, siis programm saab teha matemaatikat.
+print("Ruutvõrrandi lahendamine") # " asemel lõpus oli '. Kuid see on võimalik, see ainult sobib siis kui mõlemad on sarnased. 
+a=float(input("Sisesta a => "))
+b=float(input("Sisesta b => ")) # Polnud ) lõpus 
+c=float(input("Sisesta c => ")) # polnud float 
+D=b*(b-4*a*c) # polnud sulgudes
+if D>0: # polnud : lõpus
+    x1=(-b+D**0.5)/(2*a) # 2*a polnud sulgudes
+    x2=(-b-D**0.5)/(2*a)
+    print("Kaks lahendit:", x1, x2)
+else if D==0: # 2 '=' näitab, et see võrdub millegiga
+    x=-b/(2*a)
+    print("Üks lahend:", x)
+else:
+print("Reaalarvulised lahendid puuduvad")
+print()
+print("Palga arvutamine")
+tunnid=float(input("Sisesta töötunnid nädalas => "))
+tunnitasu=float(input("Sisesta tunnitasu (€) => "))
+if tunnid<0 and tunnid>168:
+    print("Vigane tundide arv")
+elif tunnid<=40:
+    palk=tunnid*tunnitasu
+    print("Nädalapalk:", palk, "€")
+else:
+    palk=40*tunnitasu+(tunnid-40)*tunnitasu*1,5
+    print("Nädalapalk koos ületundidega:", palk, "€")
+print()
+print("Parkimise hind")
+tunnid=int(input("Sisesta parkimise aeg tundides => "))
+if tunnid=<0:
+    print("Vigane aeg")
+elif tunnid>=3:
+    print("Hind: 5 €")
+elif tunnid>=8:
+    print("Hind: 10 € (päevapilet)")
+else: # polnud : lõpus
+    print("Hind: 2 €"
